@@ -1,0 +1,18 @@
+[2026-10-08T11:20:21Z] === ENRICH ITERATION 1 START | repo=block/overstory sha=d04b8011 ===
+[2026-10-08T11:20:21Z] [iter=1] PHASE START: enrich repo=block/overstory sha=d04b8011 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d04b8011-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d04b80114b9fe891f0f2900c36c2d53ef05644ec.nq.gz
+[2026-10-08T11:20:21Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-08T11:20:25Z] [iter=1] AST store loaded triples=178057 load_secs=4 mem_mb=370 MB
+[2026-10-08T11:20:25Z] [iter=1] Step 2: Finding LSP targets mem_mb=370 MB
+[2026-10-08T11:20:26Z] [iter=1] LSP targets found call_sites=1754 imports=383 extends=0 implements=0 secs=1
+[2026-10-08T11:20:26Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=370 MB
+[2026-10-08T11:20:27Z] [iter=1] Position index built positions=10172 nodes_with_types=13143 secs=1 mem_mb=370 MB
+[2026-10-08T11:20:27Z] [iter=1] Step 3: Starting LSP resolution mem_mb=370 MB already_completed_types=[] already_completed_files=0
+[2026-10-08T11:20:27Z] [iter=1] Resolving target type target_type=call_site count=1754
+[2026-10-08T11:20:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=6 resolved=31 errors=182 current=consumer-test/src/androidTest/kotlin/com/squareup/overstory/sample/PublishedArtifactTest.kt
+[2026-10-08T11:21:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=20 resolved=56 errors=597 current=core/src/androidTest/java/com/squareup/ui/compose/overlays/OverlayScrimTest.kt
+[2026-10-08T11:21:36Z] [iter=1] Target type resolved target_type=call_site resolved=89 errors=676 secs=69 mem_mb=370 MB
+[2026-10-08T11:21:36Z] [iter=1] Resolving target type target_type=import_statement count=383
+[2026-10-08T11:21:49Z] [iter=1] Target type resolved target_type=import_statement resolved=4 errors=0 secs=13 mem_mb=370 MB
+[2026-10-08T11:22:03Z] [iter=1] Step 5: Writing final enrichment file triples=10005
+[2026-10-08T11:22:03Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d04b80114b9fe891f0f2900c36c2d53ef05644ec.nq.gz size_kb=178
+[2026-10-08T11:22:03Z] [iter=1] PHASE END: enrich elapsed_s=101 elapsed_min=1.7 total_triples=10005
