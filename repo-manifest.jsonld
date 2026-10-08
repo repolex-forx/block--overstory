@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/block/overstory/commit/d04b80114b9fe891f0f2900c36c2d53ef05644ec",
       "git:hexsha": "d04b80114b9fe891f0f2900c36c2d53ef05644ec",
-      "repolex:parseStatus": "enrich_complete",
-      "git:tagName": "v0.2.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v0.2.0",
+      "repolex:parsedAt": "2026-10-08T11:23:27.455545+00:00"
     },
     {
       "@id": "https://repolex.ai/r/block/overstory/commit/c1ac0d8d1ca96b2eea274435c2e3ba0072c27754",
